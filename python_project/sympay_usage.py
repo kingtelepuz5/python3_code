@@ -93,7 +93,6 @@ print('{0:_^10.3f}, число с заполнителем'.format(12.123124))
 #print("Ваши числа ", value)
 # r- чтение, w - запись, x - создание если еще нет, a - добавление в файл, r+ - чтение и запись, t- текстовый файл, b - binary
 message = 'Live long and prosper'
-f = open('data_file', 'wt')
-t = f.write(message)
+f = open('data_file.txt', 'wt')
+print('a', 'b', 'c', file=f)
 f.close()
-print(t)

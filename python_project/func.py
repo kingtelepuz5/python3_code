@@ -11,7 +11,7 @@ def mu_func(f, arg):
 
 mu_func(lambda x: 2*x*x, 5)
 
-#named func 
+#named func
 def polynominal(x):
     return x**2 + 5*x + 4
 print(polynominal(-4))
@@ -25,7 +25,7 @@ nums = [11, 22, 33, 44, 55]
 result = list(map(add_five, nums))
 print(result)
 
-result  =( list(map(lambda x: x+ 5, nums))) #  применяет к каждому элементу действие функции 
+result  =(list(map(lambda x: x+ 5, nums))) #  применяет к каждому элементу действие функции
 print(result)
 
 res = list(filter(lambda x: x%2 ==0, nums)) # только те, что сооветствуют условию
@@ -39,10 +39,10 @@ for i in countwodn():
 
 #def infinty_sevens():
 #    while True:
-#        yield 7 # бесоконечная генерация семерки 
+#        yield 7 # бесоконечная генерация семерки
 
 #for i in infinty_sevens():
-#    print(i) 
+#    print(i)
 
 
 #def get_primes():
@@ -50,12 +50,12 @@ for i in countwodn():
 #    while True:
 #        if is_prime(num):
 #            yield num
-#        num +=1 
+#        num +=1
 
 def numbers(x):
     for i in range(x):
         if i % 2 == 0:
-            yield 1 
+            yield 1
 
 print(list(numbers(1)))
 
@@ -102,7 +102,7 @@ print("is odd fo 0: ",is_odd(0))
 def fib(x):
   if x == 0 or x == 1:
     return 1
-  else: 
+  else:
     return fib(x-1) + fib(x-2)
 print("fib fo 4",fib(4))
 
@@ -126,7 +126,7 @@ def power(x, y):
     return 1
   else:
     return x * power(x, y-1)
-		
+
 print("print power (2, 3): ",power(2, 3))
 
 a = (lambda x: x * (x + 1))(6)
